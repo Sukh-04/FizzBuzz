@@ -2,6 +2,7 @@ public class Multiples {
 
     public static void main(String[] args) {
 
+        int multiples = 0;
         for (int i = 3; i < 1000; i++) {
 
             // Similar to FizzBuzz, determine if i is divisible by 3 or 5.
@@ -9,10 +10,13 @@ public class Multiples {
             boolean divisibleBy5 = i % 5 == 0;
 
             if (divisibleBy3 || divisibleBy5) {
-                System.out.println(i);
+                multiples++;
 
             }
         }
+
+        System.out.println(multiples);
+
     }
 }
 
