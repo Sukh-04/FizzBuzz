@@ -2,6 +2,7 @@ public class Reduce {
 
     public static void main(String[] args) {
 
+        int steps = 0;
         int i = 100;
         while (i > 0) {
 
@@ -10,11 +11,14 @@ public class Reduce {
 
             if (isEven){
                 i = i / 2;
-                System.out.println(i);
             } else {
                 i -= 1;
-                System.out.println(i);
             }
+
+            // Count the number of loop iterations in 'steps'.
+            steps++;
         }
+
+        System.out.println(steps);
     }
 }
